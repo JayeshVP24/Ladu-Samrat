@@ -7,9 +7,13 @@ type Props = {};
 class Document extends NextDocument<Props> {
     render() {
         return (
-            <Html lang="en">
+            <Html
+                lang="en"
+                className="bg-bg w-full max-w-full overflow-x-hidden overscroll-x-none "
+            >
                 <Head>
                     {/* Create all your favicons and put them inside public/favicons folder */}
+
                     <link
                         rel="apple-touch-icon"
                         sizes="180x180"
@@ -30,11 +34,17 @@ class Document extends NextDocument<Props> {
                     <link rel="manifest" href="/favicons/site.webmanifest" />
                     <link
                         rel="mask-icon"
-                        href="/favicon/safari-pinned-tab.svg"
-                        color="#454545"
+                        href="/favicons/safari-pinned-tab.svg"
+                        color="#ff6a00"
                     />
-                    <meta name="msapplication-TileColor" content="#454545" />
-                    <meta name="theme-color" content="#454545" />
+                    <link rel="shortcut icon" href="/favicons/favicon.ico" />
+                    <meta name="msapplication-TileColor" content="#ffffff" />
+                    <meta
+                        name="msapplication-config"
+                        content="/favicons/browserconfig.xml"
+                    />
+                    <meta name="theme-color" content="#ffffff" />
+                    <meta name="google-site-verification" content="eWEm-Wgvt6Bc1WMK6ukZ36wOf9ZOj-_Q7Ni-bHApTlg" />
                 </Head>
                 <body className="">
                     <Main />

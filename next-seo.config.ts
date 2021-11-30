@@ -1,14 +1,15 @@
 import { NextSeoProps } from "next-seo";
 
 const config: NextSeoProps = {
-    title: "Title of your website/app",
-    description: "Description",
+    title: "Ladu Samrat",
+    description:
+        "Ladu Samrat Sweets and Snacks. Authentic Maharashtrian cuisine. Top Quality Mithai and Snacks. 30 Years of service to Mumbaikars, City of Mumbai.",
     openGraph: {
-        type: 'website',
-        locale: 'en_IN',
-        url: 'Domain you bought',
-        site_name: "Name for your site, eg. company name or brand name"
-    }
-}
+        type: "website",
+        locale: "en_IN",
+        url: "https://ladusamrat.in/",
+        site_name: "Ladu Samrat",
+    },
+};
 
-export default config
+export default config;
